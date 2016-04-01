@@ -1,0 +1,116 @@
+@import "../../../style/functions";
+
+$white: #fcfeff;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.editor{
+  max-height: 85%;
+  padding: 5px;
+  font-family: "Open Sans";
+
+}
+
+.title{
+  background: $white;;
+}
+
+.document-heading-input{
+  border: none;
+  outline: none;
+  padding: 0.15em 0.25em;
+  font-size: 19px;
+  background: transparent;
+  font-weight: 600;
+  width: 100%;
+}
+
+.editor-contentarea{
+  padding: 5px;
+  background: $white;
+}
+
+.editor-textarea{
+  min-height: 500px;
+  width: 95%;
+  outline: none;
+  border: none;
+  padding: 0.15em 0.25em;
+  font-size: 16px;
+  background: transparent;
+  resize: vertical;
+}
+
+.editor-toolbox{
+  position: relative;
+  margin: 2px;
+}
+
+.tokenSetter,.previewbtn{
+
+  @include vendor(transition, background .2s);
+  @include vendor(transition, color .2s);
+
+  font-family: monospace;
+  padding: 0.15em 0.25em;
+  font-size: 18px;
+  width: 45px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  background: $white;
+  color: #949494;
+  margin: 2px 5px 2px 0;
+  cursor: pointer;
+
+  &:hover{
+    @include vendor(transition, background .2s);
+    @include vendor(transition, color .2s);
+
+    background: #4a4d52;
+    color: $white;
+  }
+
+}
+
+.previewbtn{
+  display: inline-block;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+  width: 135px;
+
+}
+
+.editor-preview{
+  z-index: 9001;
+  min-height: 500px;
+  width: 95%;
+  outline: none;
+  border: none;
+  padding: 0.15em 0.25em;
+}
+
+.preview-false,.hide-true{
+  display: none;
+}
+
+code{
+  font-family: "Source Code Pro";
+}
+
+blockquote{
+  border-left: 4px solid $white;
+  padding-left: 8px;
+}
+
+#imgInput{
+  display: none;
+}

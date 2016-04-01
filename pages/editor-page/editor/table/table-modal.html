@@ -1,0 +1,43 @@
+<dom-module id="table-modal">
+
+    <template>
+
+        <link type="text/css" rel="stylesheet" href="table-modal.css">
+
+        <div class="table-modal show-{{state.open}}" tabindex="0" id="container">
+
+            <div class="table-modal-inner">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <template repeat="{{span in data.spans}}">
+                                <th><input type="text" value="{{span.heading}}"> </th>
+                            </template>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    <template repeat="{{row in data.rows}}">
+                        <tr>
+                            <template repeat="{{cell in row.cells}}">
+                                <td><input type="text" value="{{cell.content}}"> </td>
+                            </template>
+                        </tr>
+                    </template>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <button class="close-btn" on-click="{{toggleVisibility}}">Close</button>
+            <button class="close-btn" on-click="{{printTable}}">Okay</button>
+            <button class="close-btn" on-click="{{clear}}">Clear</button>
+
+        </div>
+
+    </template>
+
+    <script src="table-modal.js"></script>
+
+</dom-module>

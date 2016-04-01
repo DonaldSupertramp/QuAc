@@ -1,0 +1,25 @@
+.table-modal {
+  z-index: 9001;
+  position: absolute;
+  width: 66%;
+  min-height: 300px;
+  top: 100px;
+  left: 15%;
+  background: #cccccc;
+  box-shadow: 0 0 5px 2px #9cc8d5; }
+
+.table {
+  width: 100%; }
+
+td {
+  text-align: center; }
+
+.table-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #222;
+  display: inline-block;
+  margin: 0 auto; }
+
+/*# sourceMappingURL=table-modal.css.map */

@@ -1,0 +1,97 @@
+.document{
+  margin-top: 5px;
+  font-family: "comforta";
+  width: 90%;
+}
+
+.sidebar{
+  position: fixed;
+  right: 0;
+  width: 10%;
+  height: 100%;
+  text-align: right;
+}
+
+p,pre{
+  margin: .75em .5em;
+}
+code{
+  font-family: "Source Code Pro";
+  padding: 0 6px 2px;
+
+}
+
+h1,h2,h3,h4,h5{
+  font-family: geo;
+}
+h1{
+  font-size: 3.25em;
+  margin: .4em 8px;
+}
+h2{
+  font-size: 2.5em;
+  margin: .4em 8px;
+}
+h3{
+  font-size: 2em;
+  margin: .4em 8px;
+}
+h4{
+  font-size: 1.7em;
+  margin: .4em 8px;
+}
+
+h5{
+  font-size: 1.25em;
+  margin: .4em 8px;
+}
+a{
+  text-decoration: none;
+  color: #179a22;
+  font-weight: 600;
+}
+
+pre{
+  border-top: 4px solid #696969;
+  background: #fbfbfb;
+  color: #363636;
+  padding: 0 6px 2px;
+  width: 42%;
+}
+
+blockquote{
+  border-left: 4px solid #696969;
+  padding-left: 8px;
+}
+
+.sidebar-button{
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+p{
+  width: 60%;
+  line-height: 1.4;
+}
+
+table{
+  max-width: 95%;
+}
+
+th{
+  border-bottom: 4px solid #696969;
+}
+
+td,th{
+  min-width: 115px;
+  padding: 0.15em 0.2em;
+  background: #ffffff;
+}
+
+tr:nth-child(even){
+
+}

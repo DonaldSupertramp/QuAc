@@ -1,0 +1,33 @@
+<link rel="import" href="../editor/md-editor.html"/>
+
+<dom-module id="edit-page" mode="edit">
+
+    <template>
+
+        <link type="text/css" rel="stylesheet" href="../src/editor-page.css">
+
+        <div class="container">
+
+            <div class="controls">
+                <button class="control-element ctrl-btn" on-click="{{saveDocument}}">Save</button>
+                <button class="control-element ctrl-btn public-{{isPublic}}" on-click="{{togglePublic}}">Public</button>
+                <input type="text" class="search control-element" placeholder="Search" id="search" autofocus="true" on-keyup="{{lookup}}">
+            </div>
+
+            <div class="editor-container">
+                <md-editor class="editor" id="editor" db="https://quac.triangulum.uberspace.de/quac-api/api/upload"></md-editor>
+            </div>
+
+            <div class="category-container">
+                <input class="catInput" type="text" placeholder="Category" id="categoryInput" on-keydown="{{handleCategories}}"/>
+                <div id="categories" class="categories">
+
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+    <script src="../src/editor-page.js"></script>
+
+ </dom-module>

@@ -1,0 +1,23 @@
+{
+  "name": "quac",
+  "version": "0.0.1",
+  "description": "Markdown powered document organization, lightning-fast",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Schreyer",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.1.0",
+    "concurrently": "^2.0.0"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

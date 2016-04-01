@@ -1,0 +1,24 @@
+{
+  "name": "quac",
+  "version": "0.0.0",
+  "description": "Quick Access to  your documents",
+  "authors": [
+    "Jan Schreyer"
+  ],
+  "license": "MIT",
+  "homepage": "http://quac.triangulum.uberspace.de/quac2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "app-router": "visionmedia/page.js#~1.6.4",
+    "polymer": "Polymer/polymer#^1.2.0",
+    "bluebird": "~2.3.4",
+    "marked": "~0.3.2",
+    "html5-history-anchor": "~0.4.0"
+  }
+}

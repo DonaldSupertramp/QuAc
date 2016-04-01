@@ -1,0 +1,55 @@
+<!--<link rel="import" href="table/table-modal.html">-->
+
+<dom-module id="md-editor">
+
+   <template>
+
+      <link type="text/css" rel="stylesheet" href="md-editor.css">
+
+       <div class="editor">
+
+           <div class="title">
+               <input class="document-heading-input" placeholder="Title" type="text" id="title" value="{{document.title}}">
+           </div>
+
+           <!-- Button Panel -->
+           <div class="editor-toolbox" id="toolbox">
+               <span class="tokenSetter" data-type="default" data-token="bold">B</span>
+               <span class="tokenSetter" data-type="default" data-token="italics">I</span>
+               <span class="tokenSetter" data-type="default" data-token="code"><></span>
+               <span class="tokenSetter" data-type="default" data-token="url">URL</span>
+               <span class="tokenSetter" data-type="default" data-token="blockquote">BQ</span>
+               <span class="tokenSetter" data-type="table" data-token="table">TBL</span>
+               <span class="tokenSetter" data-type="img" id="imgToken">IMG</span>
+               <span class="tokenSetter" data-type="default" data-token="h1">H1</span>
+               <span class="tokenSetter" data-type="default" data-token="h2">H2</span>
+               <span class="tokenSetter" data-type="default" data-token="h3">H3</span>
+               <span class="tokenSetter" data-type="default" data-token="h4">H4</span>
+               <span class="tokenSetter" data-type="default" data-token="h5">H5</span>
+
+               <input type="file" id="imgInput">
+
+               <progress class="hide-{{prog <= 0}}" value="{{progress}}" max="100"></progress>
+
+               <button on-click="{{togglePreview}}" class="previewbtn">Preview</button>
+           </div>
+
+           <!-- Editor Area -->
+           <div class="editor-contentarea hide-{{state.preview}}">
+               <textarea class="editor-textarea" id="content" value="{{document.content}}"></textarea>
+           </div>
+
+           <!-- Preview -->
+           <div id="preview" class="editor-preview preview-{{state.preview}}">
+               
+           </div>
+
+       </div>
+
+       <table-modal id="tableModal"></table-modal>
+
+   </template>
+
+  <script src="md-editor.js"></script>
+
+ </dom-module>

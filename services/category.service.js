@@ -1,0 +1,3 @@
+function CategoryService(){
+    this.name = '';
+}

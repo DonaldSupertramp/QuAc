@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.editor {
+  max-height: 85%;
+  padding: 5px;
+  font-family: "Open Sans"; }
+
+.title {
+  background: #fcfeff; }
+
+.document-heading-input {
+  border: none;
+  outline: none;
+  padding: 0.15em 0.25em;
+  font-size: 19px;
+  background: transparent;
+  font-weight: 600;
+  width: 100%; }
+
+.editor-contentarea {
+  padding: 5px;
+  background: #fcfeff; }
+
+.editor-textarea {
+  min-height: 500px;
+  width: 95%;
+  outline: none;
+  border: none;
+  padding: 0.15em 0.25em;
+  font-size: 16px;
+  background: transparent;
+  resize: vertical; }
+
+.editor-toolbox {
+  position: relative;
+  margin: 2px; }
+
+.tokenSetter, .previewbtn {
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  font-family: monospace;
+  padding: 0.15em 0.25em;
+  font-size: 18px;
+  width: 45px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  background: #fcfeff;
+  color: #949494;
+  margin: 2px 5px 2px 0;
+  cursor: pointer; }
+  .tokenSetter:hover, .previewbtn:hover {
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -ms-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+    background: #4a4d52;
+    color: #fcfeff; }
+
+.previewbtn {
+  display: inline-block;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+  width: 135px; }
+
+.editor-preview {
+  z-index: 9001;
+  min-height: 500px;
+  width: 95%;
+  outline: none;
+  border: none;
+  padding: 0.15em 0.25em; }
+
+.preview-false, .hide-true {
+  display: none; }
+
+code {
+  font-family: "Source Code Pro"; }
+
+blockquote {
+  border-left: 4px solid #fcfeff;
+  padding-left: 8px; }
+
+#imgInput {
+  display: none; }
+
+/*# sourceMappingURL=md-editor.css.map */

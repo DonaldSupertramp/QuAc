@@ -1,0 +1,18 @@
+<dom-module id="document-page" attributes="title">
+
+   <template>
+
+      <link type="text/css" rel="stylesheet" href="document-page.css">
+
+       <div class="sidebar">
+           <a href="#/document/edit/{{title}}" id="edit" class="sidebar-button">Edit</a>
+           <span class="sidebar-button" on-click="{{remove}}">Remove</span>
+       </div>
+
+      <div class="document" id="document"></div>
+
+   </template>
+
+  <script src="document-page.js"></script>
+
+ </dom-module>

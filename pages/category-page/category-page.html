@@ -1,0 +1,25 @@
+<link rel="import" href="../../components/header/header.html">
+
+<polymer-element name="category-page">
+
+   <template>
+
+      <link type="text/css" rel="stylesheet" href="category-page.css">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+       
+       <div class="controls">
+           <button class="control-element ctrl-btn wrn">Delete Category</button>
+           <input type="text" class="search control-element" placeholder="Search" id="search" autofocus="true" on-keyup="{{lookup}}">
+       </div>
+
+      <h2 class="title">{{name}}</h2>
+
+      <div id="documents" class="category-container">
+
+      </div>
+
+   </template>
+
+  <script src="category-page.js"></script>
+
+ </polymer-element>
